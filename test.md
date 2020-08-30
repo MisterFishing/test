@@ -2,33 +2,9 @@
 
 https://sourceforge.net/projects/mingw-w64/files/
 
-![image-20200829161323315](test.assets/image-20200829161323315.png)
-
-![image-20200828180627757](.\C++语言编程基础.assets\image-20200828180627757.png)
+![image-20200828180627757](test.assets\image-20200828180627757.png)
 
 文件名：i686-8.1.0-release-win32-dwarf-rt_v6-rev0.7z
-
-解压到任意文件夹：
-
-![image-20200829132508400](C:\data\cpp\2020\C++语言编程基础.assets\image-20200829132508400.png)
-
-C++编译器文件：g++.exe
-
-
-
-所在文件夹：C:\tools\mingw\bin
-
-![image-20200829132703141](C:\data\cpp\2020\C++语言编程基础.assets\image-20200829132703141.png)
-
-打开命令提示符，输入：setx path "%path%;C:\tools\mingw\bin"
-
-![image-20200829133634533](C:\data\cpp\2020\C++语言编程基础.assets\image-20200829133634533.png)
-
-重新打开命令提示符，输入：g++ --version
-
-出现版本信息，表示实验环境搭建成功。
-
-![image-20200829133526273](C:\data\cpp\2020\C++语言编程基础.assets\image-20200829133526273.png)
 
 # 什么是C++？
 
