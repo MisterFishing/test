@@ -8,6 +8,10 @@ https://sourceforge.net/projects/mingw-w64/files/
 
 ![image-20200828180627757](https://github.com/MisterFishing/test/blob/master/test.assets/image-20200828180627757.png?raw=true)
 
+aaa
+
+![image-20200828180627757](test.assets/image-20200828180627757.png?raw=true)
+
 # 什么是C++？
 
 C++ = C + 面向对象 + ……
