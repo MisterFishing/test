@@ -2,13 +2,41 @@
 
 https://sourceforge.net/projects/mingw-w64/files/
 
-![image-20200828180627757](https://internal-api-space.feishu.cn/space/api/box/stream/download/preview/boxcnMmN5BmKngJ7SNYBXbQD5Ze?preview_type=12&version=6866310634418470914)
+MinGW-W64 GCC-8.1.0
+
+i686-win32-dwarf
 
 文件名：i686-8.1.0-release-win32-dwarf-rt_v6-rev0.7z
 
-aaa
+解压到任意文件夹，例如：C:\mingw
 
-![image-20200828180627757](test.assets/image-20200828180627757.png?raw=true)
+C++编译器文件：C:\mingw\bin\g++.exe
+
+设置环境变量：
+
+```
+C:\>setx path "%path%;C:\mingw\bin"
+
+成功: 指定的值已得到保存。
+
+C:\>
+
+```
+
+重新打开命令提示符，输入：g++ --version
+
+出现版本信息，表示实验环境搭建成功。
+
+```
+C:\>g++ --version
+g++ (i686-win32-dwarf-rev0, Built by MinGW-W64 project) 8.1.0
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+C:\>
+```
 
 # 什么是C++？
 
@@ -16,7 +44,7 @@ C++ = C + 面向对象 + ……
 
 # 第一个C++程序
 
-```
+```c++
 int main(){
     return 0; /* 1、2、3…… */
 }
@@ -30,7 +58,7 @@ int main(){
 
 # 第二个C++程序
 
-```
+```c++
 #include <stdio.h>
 int main(){
     printf("Hello, I'm a C++ program.\n");
@@ -48,7 +76,7 @@ int main(){
 
 # 第三个C++程序
 
-```
+```c++
 #include <iostream>
 using namespace std;
 int main(){
@@ -121,4 +149,9 @@ https://blog.csdn.net/lewsn2008/article/details/2299365
 ```
 
 ## 引用类型
+
+https://uestc.feishu.cn/file/boxcnqKAYU21cg0cmeY2FzHQcGb
+
+https://uestc.feishu.cn/file/boxcn2kHXLAUSE6qAK54RtzVLzh
+
 
