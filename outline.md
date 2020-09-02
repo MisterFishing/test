@@ -1,153 +1,58 @@
-# 实验环境
+# 第2章  形式语言简介
 
-https://sourceforge.net/projects/mingw-w64/files/
+---
 
-MinGW-W64 GCC-8.1.0
+# 文法的定义
 
-i686-win32-dwarf
+文法G（全称短语结构文法PSG）是一个四元式，
 
-文件名：i686-8.1.0-release-win32-dwarf-rt_v6-rev0.7z
+​		G = ( ∑，V，S，P ) 
 
-解压到任意文件夹，例如：C:\mingw
+∑：终结符集合；
 
-C++编译器文件：C:\mingw\bin\g++.exe
+V：非终结符集合；
 
-设置环境变量：
+S：开始符，S ∈ V；
 
-```
-C:\>setx path "%path%;C:\mingw\bin"
+P：产生式集合。
 
-成功: 指定的值已得到保存。
+---
 
-C:\>
+# 产生式
 
-```
+产生式的形式：
 
-重新打开命令提示符，输入：g++ --version
+​		α → β
 
-出现版本信息，表示实验环境搭建成功。
+α ∈ ( ∑ ∪ V )<sup>+</sup>，α 至少包含一个非终结符。
 
-```
-C:\>g++ --version
-g++ (i686-win32-dwarf-rev0, Built by MinGW-W64 project) 8.1.0
-Copyright (C) 2018 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+β ∈ ( ∑ ∪ V )<sup>*</sup>，β可以为 ε，当β为ε时，α→ε称为空串产生式。
+
+一个产生式的左边可以是串。
+
+第一个产生式的左边只能有一个符号：开始符号S。
+
+A ⇒* αβ
+
+A ⇒<sup>*</sup> αβ
 
 
-C:\>
-```
 
-# 什么是C++？
+---
 
-C++ = C + 面向对象 + ……
 
-# 第一个C++程序
 
-```c++
-int main(){
-    return 0; /* 1、2、3…… */
-}
-```
+# 产生式
 
-编译：g++ test.cpp -o test.exe
+对于产生式 α → β ：
 
-执行：test.exe
+$\alpha \in ( \Sigma ∪ V )^+$，$\alpha$至少包含一个非终结符。
 
-查看结果（返回值）：`echo %errorlevel%`
+$\beta  \in ( \Sigma ∪ V ) ^*$，$\beta$可以为 ε，当β为ε时，α→ε称为空串产生式。
 
-# 第二个C++程序
+一个产生式的左边可以是串。
 
-```c++
-#include <stdio.h>
-int main(){
-    printf("Hello, I'm a C++ program.\n");
-    return 0;
-}
-```
+第一个产生式的左边只能有一个符号：开始符号S。
 
-库函数：printf
-
-头文件：stdio.h
-
-文件路径：C:\tools\mingw\i686-w64-mingw32\include
-
-如何找到：搜索……
-
-# 第三个C++程序
-
-```c++
-#include <iostream>
-using namespace std;
-int main(){
-    cout << "Hello, I'm really a C++ program." << endl;
-    return 0;
-}
-```
-
-输出流对象：cout
-
-头文件：iostream
-
-文件路径：C:\tools\mingw\lib\gcc\i686-w64-mingw32\8.1.0\include\c++
-
-如何找到：搜索……
-
-# C++语言中的I/O
-
-输出流对象：cout
-
-左移运算符：<<
-
-```
-int a = 5, b = 4;
-printf("a + b = %d \n", a + b);
-cout << "a + b = " << a + b << endl; 
-```
-
-输入流对象：cin
-
-右移运算符：>>
-
-```
-int a, b ;
-scanf("%d %d", &a, &b);
-cin >> a >> b;
-```
-
-【格式化输出参考】
-
-http://c.biancheng.net/view/7578.html
-
-【格式化输入参考】
-
-https://blog.csdn.net/lewsn2008/article/details/2295790
-
-https://blog.csdn.net/dongtingzhizi/article/details/2299358
-
-https://blog.csdn.net/lewsn2008/article/details/2299365
-
-# C++语言中的数据类型
-
-## 逻辑类型
-
-```
-    int i,j;
-    bool a,b;
-    
-    a = true;
-    b = false;
-    cout << "a = " << a << ", " << "b = " << b << endl;
-    
-    i=a;
-    j=b;
-    cout << "i = " << i << ", " << "j = " << j << endl;
-
-    a = !i;
-    b = !j;
-    cout << "a = " << a << ", " << "b = " << b << endl;
-```
-
-## 引用类型
 
 
